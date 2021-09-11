@@ -28,8 +28,7 @@ List of terms definitions and code used to complete the analysis
 
 | Term | Description | Calculation/ or Value |
 | :--- | :--- | :---: |
-|arbitrage_spread / difference |The spread is the difference between two stocks or exchanges that exists as the same time.  A profit is made when you simultaneously buy at the lower price and sell at the higher price, locking in the price |bitcoin_1['Column name '].loc['date'].plot(legend=True, figsize=(15, 10), title="October 19, 2015", color="blue", label="BTC 1") bitcoin_2['Column name'].loc['date'].plot(legend=True, figsize=(15, 10), color="orange", label="BTC 2")|
-
+|arbitrage_spread / difference |The spread is the difference between two stocks or exchanges that exists as the same time.  A profit is made when you simultaneously buy at the lower price and sell at the higher price, locking in the price |bitcoin_1['Column name '].loc['date'].plot(legend=True, figsize=(15, 10), title="October 19, 2015", color="blue", label="BTC 1") bitcoin_2['Column name'].loc['date'].plot(legend=True, figsize=(15, 10), color="orange", label="BTC 2")
 |arbitrage_spread| Review the summary statistics for the spread between the two assets by subtracting the closing price|arbitrage_spread = bitcoin_2['Column name'].loc['date'] - bitcoin_1['Column name'].loc['date']  
 arbitrage_spread.describe()|
 
