@@ -4,7 +4,7 @@
 
 ### Overview
 
-The cryptoarbitage analysis contains data collection, preparation, analysis, and visualizations used to complete to arbitrage analysis between Bitstmap and Coinbase.  
+The cryptoarbitage analysis contains data from 01/01/2018 - 03/31/2018 , preparation, analysis, and visualizations used to complete to arbitrage analysis between Bitstmap and Coinbase.  
 
 ---
 
@@ -19,7 +19,7 @@ Jupyter, Pandas, Pathlib, matpltlib
 ---
 
 ### Outcome: 
-There are minimal arbitrage opportunities between the two exchanges.  Of the months of data analyzed arbitrage opportunities were limited to 185 events. Specificaly 13 days in Jan, 5 days in Feb, and 3 days in Mar. There have been less arbitrage oppertunitres between these exchanges over time. Note: Referanced outome data in attached CSV file.  
+There are minimal arbitrage opportunities between the two exchanges.  Of the months of data analyzed arbitrage opportunities were limited to 185 timestamped events. Specificaly 13 days in Jan, 5 days in Feb, and 3 days in Mar. There have been less arbitrage oppertunitres between these exchanges over time. Note: Referanced outome data in attached CSV file.  
 
 ---
 
