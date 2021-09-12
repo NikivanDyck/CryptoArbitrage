@@ -30,7 +30,7 @@ List of terms definitions and code used to complete the analysis
 | :--- | :--- | :---: |
 |arbitrage_spread / difference |The spread is the difference between two stocks or exchanges that exists as the same time.  A profit is made when you simultaneously buy at the lower price and sell at the higher price, locking in the price |bitcoin_1['Column name '].loc['date'].plot(legend=True, figsize=(15, 10), title="TITLE", color="blue", label="BTC 1") bitcoin_2['Column name'].loc['date'].plot(legend=True, figsize=(15, 10), color="orange", label="BTC 2")
 |arbitrage_spread| Review the summary statistics for the spread between the two assets by subtracting the closing price|arbitrage_spread = bitcoin_2['Column name'].loc['date'] - bitcoin_1['Column name'].loc['date'] arbitrage_spread.describe()
-|spread_return|Identify the trades that will cover the transaction costs. To begin first convert the arbitrage_spread dollar values into percentage return values. Include only the trades that have an arbitrage_spread that’s greater than 0. Use the prices from the day as the denominator. |spread_return =arbitrage_spread[arbitrage_spread>0] / bitcoin_1['Column name'].loc['date'] 
+|spread_return|Identify the trades that will cover the transaction costs of 1% |spread_return =arbitrage_spread[arbitrage_spread>0] / bitcoin_1['Column name'].loc['date'] 
 |Profitable_trades|percentage return values. 1% minimum return threshold, thus anything over 1% = profitable|profitable_trades = spread_return[spread_return > .01]  profitable_trades.head(10)  profitable_trades.describe()
 |profit|This is the potential profit by “day”/ timestamp.|profit = profitable_trades * bitcoin_1['Close'].loc['2015-10-19']
 
